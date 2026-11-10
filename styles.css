@@ -121,6 +121,23 @@ h2 {
   line-height: 1.45;
 }
 
+.status {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  max-width: var(--measure);
+  margin: 1.25rem 0 0;
+  font-weight: 600;
+}
+.status-dot {
+  flex: none;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: var(--buoy);
+  transform: translateY(-0.05em);
+}
+
 .where {
   margin: 0.75rem 0 0;
   color: var(--muted);

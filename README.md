@@ -8,7 +8,9 @@ Personal site for Will Weaver. Plain HTML and CSS with no build step.
 - `styles.css` – all styles, with light and dark themes
 - `fonts/` – self-hosted Schibsted Grotesk (SIL Open Font License, see `fonts/OFL.txt`)
 - `resume.pdf` – linked from the page
-- `favicon.svg`
+- `favicon.svg` and `apple-touch-icon.png` – browser and home-screen icons
+- `og-image.png` – link preview image (1200×630) for LinkedIn, Slack and texts
+- `404.html` – served by Vercel for missing pages
 
 ## Run locally
 
