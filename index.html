@@ -46,8 +46,8 @@
   <header class="intro wrap">
     <h1>Will Weaver</h1>
     <p class="lede">I’m a full-stack engineer who owns features from end to end: the schema, the API, the UI, the jobs that run overnight, and the alerts that tell me when something’s wrong.</p>
-    <p class="status"><span class="status-dot" aria-hidden="true"></span>Available now for senior or lead full-stack roles, remote or hybrid around Philadelphia, Princeton and Bucks County.</p>
-    <p class="where">Based in Yardley, Pennsylvania.</p>
+    <p class="status"><span class="status-dot" aria-hidden="true"></span>Available now for senior or lead full-stack roles</p>
+    <p class="where">Remote or hybrid around Philadelphia and Princeton · Based in Yardley, Pennsylvania</p>
     <nav class="links" aria-label="Contact and profiles">
       <a href="mailto:willweaver@gmail.com">willweaver@gmail.com</a>
       <a href="https://www.linkedin.com/in/william-w-a8011926">LinkedIn</a>
@@ -56,9 +56,58 @@
     </nav>
   </header>
 
+  <main>
+    <div class="wrap work-block">
+    <section id="work" aria-labelledby="work-heading">
+      <h2 id="work-heading">Selected work</h2>
+
+      <article class="project">
+        <h3><a href="https://prussianmotors.com/">Prussian Motors</a>, BigCommerce to Shopify</h3>
+        <p class="when">2026</p>
+        <ul class="layers" aria-label="What I built"><li>Database</li><li>API</li><li>UI</li><li>Scheduled jobs</li></ul>
+        <p>A freelance rebuild I owned start to finish in <strong>four months</strong>: a Shopify Hydrogen storefront, an updated Next.js and NestJS admin that keeps listings in step with inventory and eBay, and the cutover from BigCommerce, with order history imported and old URLs redirected to protect search rankings.</p>
+      </article>
+
+      <article class="project">
+        <h3>Price Alerts</h3>
+        <p class="when">2026</p>
+        <ul class="layers" aria-label="What I built"><li>Database</li><li>API</li><li>UI</li><li>Scheduled jobs</li></ul>
+        <p>Built end to end: alert storage, daily price checks, signup on ship and itinerary pages, Braze emails and a team dashboard. It launched in the US, UK and Australia and drew <strong>3,200+ alerts</strong> and <strong>900+ new email subscribers</strong> in its first seven weeks.</p>
+      </article>
+
+      <article class="project">
+        <h3>Rebuilding Find a Cruise</h3>
+        <p class="when">2025</p>
+        <ul class="layers" aria-label="What I built"><li>API</li><li>UI</li></ul>
+        <p>Cruise Critic’s cruise search page and <strong>largest source of revenue</strong>. I rebuilt it on React Server Components with structured data and revenue tracking from day one, then owned the wider App Router migration. Years earlier I’d built the Elasticsearch search API behind it.</p>
+      </article>
+
+      <article class="project">
+        <h3>Bridge, the internal admin app</h3>
+        <p class="when">2024–2026</p>
+        <ul class="layers" aria-label="What I built"><li>Database</li><li>UI</li><li>Scheduled jobs</li><li>Monitoring</li></ul>
+        <p>Much of Bridge is mine: SEO templates, port management and sponsored-deal tools on Convex. I also moved the remarketing feeds for <strong>five ad platforms</strong> off cron onto Inngest, with run history, alerting and validation.</p>
+      </article>
+
+      <article class="project">
+        <h3>The serverless GraphQL platform</h3>
+        <p class="when">2020–2023</p>
+        <ul class="layers" aria-label="What I built"><li>Database</li><li>API</li></ul>
+        <p>I built and owned core services on Cruise Critic’s Apollo Federation platform on AWS Lambda, including the main data subgraph, the Partner Portal Deals backend, and IMS, the identity and subscription service behind the move from ExactTarget to Braze.</p>
+      </article>
+
+      <article class="project">
+        <h3>Pricing, tracking and partner billing</h3>
+        <p class="when">2014–2026</p>
+        <ul class="layers" aria-label="What I built"><li>Database</li><li>Scheduled jobs</li><li>Monitoring</li></ul>
+        <p>I built cruise price ingestion and ran it for over a decade: <strong>50+ partner pricing parsers</strong> with change detection and alerting. I also built the click and conversion pixel, rebuilt site tracking as an event-driven pipeline with a queue, built CPC billing for meta partners, and built the first meta pricing feeds, onboarding <strong>23 partners</strong> including Virgin Voyages, Viking and Hurtigruten.</p>
+      </article>
+    </section>
+    </div>
+
   <section id="career" class="career" aria-labelledby="career-heading">
     <div class="wrap">
-      <h2 id="career-heading">Twenty years, four generations of stack</h2>
+      <h2 id="career-heading">Twenty years of shipping, end to end</h2>
       <p class="section-note">Most of it at Cruise Critic, a Tripadvisor company, where for twelve years I owned features across the whole stack as the site was rebuilt around them.</p>
     </div>
 
@@ -101,63 +150,12 @@
     </figure>
   </section>
 
-  <main class="wrap">
-    <section id="work" aria-labelledby="work-heading">
-      <h2 id="work-heading">Selected work</h2>
-
-      <article class="project">
-        <h3><a href="https://prussianmotors.com/">Prussian Motors</a>, BigCommerce to Shopify</h3>
-        <p class="when">2026</p>
-        <p>A freelance rebuild I owned start to finish in four months. I moved the store to a Shopify Hydrogen storefront (React Router, TypeScript, Oxygen) with preview deploys for every pull request, and updated the company’s Next.js and NestJS admin to run the business on Shopify: it lists and removes products as inventory changes, manages eBay listings and scheduled markdowns, and logs every job. Then I ran the cutover: order history imported into Shopify customer accounts, old URLs redirected to protect search rankings, and carrier-calculated shipping and local pickup set up.</p>
-      </article>
-
-      <article class="project">
-        <h3>Price Alerts</h3>
-        <p class="when">2026</p>
-        <p>Built end to end: alert storage, fare-drop search queries, daily price checks, signup on ship and itinerary pages, the /price-alerts page, emails through Braze and a dashboard in Bridge. It launched in the US, UK and Australia in September 2026 and drew 3,200+ alerts from 2,300+ people, and 900+ new email subscribers, in its first seven weeks. It’s a modern take on the price-drop alerts I first shipped on the PHP platform in 2016.</p>
-      </article>
-
-      <article class="project">
-        <h3>Rebuilding Find a Cruise</h3>
-        <p class="when">2025</p>
-        <p>Find a Cruise is the cruise search page and Cruise Critic’s largest source of revenue. I rebuilt it on React Server Components and rolled it out with structured data, indexing rules and revenue tracking in place from day one, then went on to own the wider App Router migration. Years earlier I’d built the Elasticsearch-backed API behind it, with faceted deal search and score-based ranking, and later cut the page down to a single API call with full-page caching in front of it.</p>
-      </article>
-
-      <article class="project">
-        <h3>Bridge, the internal admin app</h3>
-        <p class="when">2024–2026</p>
-        <p>Much of Bridge is mine: SEO templates for ship, destination and deal pages, port management, and sponsored-deal and ad-request tools. I also moved the remarketing feeds for Google, Bing, Facebook, Taboola and TikTok off cron onto Inngest and Convex, with run history, charts, alerting and drop validation.</p>
-      </article>
-
-      <article class="project">
-        <h3>The serverless GraphQL platform</h3>
-        <p class="when">2020–2023</p>
-        <p>When Cruise Critic rebuilt on Next.js, I built and owned core services on its GraphQL platform, Apollo Federation on AWS Lambda: the main data subgraph, email sponsorship, partners, reviews and analytics. On top of it I built the Partner Portal Deals backend, with its own database, JWT-authenticated GraphQL, click tracking and daily partner reports.</p>
-      </article>
-
-      <article class="project">
-        <h3>Moving email from ExactTarget to Braze</h3>
-        <p class="when">2023</p>
-        <p>I built IMS, the identity and subscription service, on WunderGraph and OpenSearch and published it as an npm SDK. Then I imported users from ExactTarget, SSO and Auth0, and removed the old ExactTarget code once nothing depended on it.</p>
-      </article>
-
-      <article class="project">
-        <h3>Pricing, tracking and partner billing</h3>
-        <p class="when">2014–2026</p>
-        <p>I built cruise price ingestion and ran it for over a decade: more than 50 of the site’s partner pricing parsers across FTP, S3, HTTP and email feeds, with change detection and alerting. I built the click and conversion pixel, the revenue reporting behind it and the CPC billing for meta partners, with vendor budgets and time-zone-aware daily caps. I also built the first meta pricing feeds and onboarded 23 partners and vendors, including Virgin Voyages, Viking and Hurtigruten.</p>
-      </article>
-
-      <article class="project">
-        <h3>Guardrails for AI coding agents</h3>
-        <p class="when">2025–2026</p>
-        <p>I’ve used Claude Code daily since 2025. I co-wrote our agent instructions and the policy that keeps agents from deploying, publishing or migrating production, enforced by a hook in each agent, so the team could use them freely without risking the live site.</p>
-      </article>
-    </section>
-
+    <div class="wrap rest-block">
     <section id="how-i-work" class="how" aria-labelledby="how-heading">
       <h2 id="how-heading">How I work</h2>
       <p>I do my best work owning a hard problem from the first query to the last alert: a revenue-critical page, a migration nobody wants to touch, a pipeline that has to be right every night. I like working closely with a strong lead, co-leading projects and helping teammates along the way.</p>
       <p>I care about leaving systems easier to change than I found them, which is why so much of my work has been upgrades: PHP 7 to 8.5 on the main platform, Next.js from the Pages Router to the App Router, Jenkins to GitHub Actions, hand-managed AWS to audited Terraform.</p>
+      <p>I’ve used Claude Code daily since 2025, and I co-wrote the agent instructions and the guardrails that keep coding agents from deploying, publishing or migrating production.</p>
     </section>
 
     <section id="tools" class="tools" aria-labelledby="tools-heading">
@@ -172,6 +170,7 @@
         <div><dt>AI-assisted</dt><dd>Claude Code, agent instructions and skills, production guardrails for agents</dd></div>
       </dl>
     </section>
+    </div>
   </main>
 
   <footer id="contact" class="contact wrap">

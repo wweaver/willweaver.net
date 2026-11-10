@@ -142,6 +142,7 @@ h2 {
   margin: 0.75rem 0 0;
   color: var(--muted);
 }
+.status + .where { margin-top: 0.3rem; padding-left: 1.25rem; }
 
 .links {
   display: flex;
@@ -279,15 +280,19 @@ h2 {
 
 /* Selected work */
 
-main { padding-block: clamp(3rem, 7vw, 5rem); }
+main { border-top: 1px solid var(--rule); }
 
-main > section + section { margin-top: clamp(3.5rem, 8vw, 5.5rem); }
+.work-block,
+.rest-block { padding-block: clamp(3rem, 7vw, 5rem); }
+
+.rest-block > section + section { margin-top: clamp(3.5rem, 8vw, 5.5rem); }
 
 .project {
   display: grid;
   grid-template-columns: 9rem minmax(0, var(--measure));
   grid-template-areas:
     "when title"
+    "when layers"
     "when body";
   column-gap: 1.5rem;
   padding-top: 1.75rem;
@@ -312,7 +317,27 @@ main > section + section { margin-top: clamp(3.5rem, 8vw, 5.5rem); }
 }
 .project p:not(.when) {
   grid-area: body;
-  margin: 0.5rem 0 0;
+  margin: 0.6rem 0 0;
+}
+.project strong { font-weight: 650; }
+
+.layers {
+  grid-area: layers;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.55rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.layers li {
+  padding: 0.05rem 0.6rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.6;
 }
 
 .how p {
@@ -376,6 +401,7 @@ main > section + section { margin-top: clamp(3.5rem, 8vw, 5.5rem); }
     grid-template-areas:
       "title"
       "when"
+      "layers"
       "body";
   }
   .when { margin-top: 0.25rem; }
