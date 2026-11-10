@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Will Weaver, senior software engineer</title>
+  <meta name="description" content="Will Weaver is a senior software engineer in Yardley, Pennsylvania who builds search, pricing and revenue systems and moves legacy code onto modern stacks.">
+  <meta property="og:title" content="Will Weaver, senior software engineer">
+  <meta property="og:description" content="Search, pricing and revenue systems, and moving legacy code onto modern stacks.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://willweaver.net/">
+  <link rel="canonical" href="https://willweaver.net/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip" href="#work">Skip to selected work</a>
+
+  <header class="intro wrap">
+    <h1>Will Weaver</h1>
+    <p class="lede">I’m a senior software engineer. I build search, pricing and revenue systems, and I move legacy code onto modern stacks without breaking the parts that make money.</p>
+    <p class="where">Based in Yardley, Pennsylvania.</p>
+    <nav class="links" aria-label="Contact and profiles">
+      <a href="mailto:willweaver@gmail.com">willweaver@gmail.com</a>
+      <a href="https://www.linkedin.com/in/william-w-a8011926">LinkedIn</a>
+      <a href="/resume.pdf">Résumé (PDF)</a>
+    </nav>
+  </header>
+
+  <section class="career" aria-labelledby="career-heading">
+    <div class="wrap">
+      <h2 id="career-heading">Twenty years, four generations of stack</h2>
+      <p class="section-note">Most of it at Cruise Critic, a Tripadvisor company, where I’ve shipped on the PHP platform, the Next.js site, the Convex admin app and AWS.</p>
+    </div>
+
+    <figure class="timeline wrap-wide">
+      <ol>
+        <li style="--from: 0; --to: 6.0">
+          <span class="role"><strong>eNet Advertising</strong> Full-stack PHP for a network of thousands of domains</span>
+          <span class="track"><span class="bar early"></span></span>
+          <span class="years">2007–2008</span>
+        </li>
+        <li style="--from: 6.0; --to: 35.4">
+          <span class="role"><strong>AWeber</strong> Python APIs, queues and a service sending millions of emails a day</span>
+          <span class="track"><span class="bar early"></span></span>
+          <span class="years">2008–2014</span>
+        </li>
+        <li style="--from: 36.2; --to: 39.6">
+          <span class="role"><strong>Pet360</strong> NetSuite to warehouse EDI, over 1,000 orders a day</span>
+          <span class="track"><span class="bar early"></span></span>
+          <span class="years">2014</span>
+        </li>
+        <li style="--from: 39.6; --to: 65">
+          <span class="role"><strong>Cruise Critic</strong> PHP platform: price ingestion, meta pricing feeds, click and conversion tracking</span>
+          <span class="track"><span class="bar"></span></span>
+          <span class="years">2014–2019</span>
+        </li>
+        <li style="--from: 65; --to: 85">
+          <span class="role"><strong>Cruise Critic</strong> The Next.js rebuild, Partner Portal, the move to Braze, the PHP 8 upgrade</span>
+          <span class="track"><span class="bar"></span></span>
+          <span class="years">2020–2023</span>
+        </li>
+        <li class="current" style="--from: 85; --to: 99.4">
+          <span class="role"><strong>Cruise Critic</strong> Search rebuild, Price Alerts, the Bridge admin app, infrastructure as code</span>
+          <span class="track"><span class="bar"></span></span>
+          <span class="years">2024–now</span>
+        </li>
+      </ol>
+      <div class="axis" aria-hidden="true">
+        <span style="--at: 0">2007</span>
+        <span style="--at: 15">2010</span>
+        <span style="--at: 35">2014</span>
+        <span style="--at: 55">2018</span>
+        <span style="--at: 75">2022</span>
+        <span style="--at: 95">2026</span>
+      </div>
+    </figure>
+  </section>
+
+  <main id="work" class="wrap">
+    <section aria-labelledby="work-heading">
+      <h2 id="work-heading">Selected work</h2>
+
+      <article class="project">
+        <h3>Rebuilding Find a Cruise</h3>
+        <p class="when">2025</p>
+        <p>Find a Cruise is the cruise search page and Cruise Critic’s largest source of revenue. I rebuilt it on React Server Components and rolled it out with structured data, indexing rules and revenue tracking in place from day one. Years earlier I’d cut the same page down to a single API call and put full-page caching in front of it.</p>
+      </article>
+
+      <article class="project">
+        <h3>Price Alerts</h3>
+        <p class="when">2026</p>
+        <p>Built end to end: fare-drop search queries, signup on ship and itinerary pages, alert emails through Braze and a dashboard for the team. It launched in the US, UK and Australia and started growing the email list in its first weeks. It’s a modern take on the price-drop alerts I first shipped on the PHP platform in 2016.</p>
+      </article>
+
+      <article class="project">
+        <h3>Bridge, the internal admin app</h3>
+        <p class="when">2024–2026</p>
+        <p>Much of Bridge is mine: SEO templates for ship, destination and deal pages, port management, sponsored-deal tools, and itinerary and deal feed pipelines moved off cron onto Inngest and Convex with run history, alerting and validation.</p>
+      </article>
+
+      <article class="project">
+        <h3>Guardrails for AI coding agents</h3>
+        <p class="when">2026</p>
+        <p>I co-wrote the policy that keeps AI coding agents from deploying, publishing or migrating production, and enforced it with a hook in each agent, so the team can use them freely without risking the live site.</p>
+      </article>
+
+      <article class="project">
+        <h3>Moving email from ExactTarget to Braze</h3>
+        <p class="when">2023</p>
+        <p>I built IMS, the user profile service, with Elasticsearch-backed admin search, imported users from ExactTarget, SSO and Auth0, and removed the old ExactTarget code once nothing depended on it.</p>
+      </article>
+
+      <article class="project">
+        <h3>Tracking, pricing feeds and partners</h3>
+        <p class="when">2014–2026</p>
+        <p>I built the click and conversion pixel and the revenue reporting behind it, rebuilt client-side tracking as a queued event pipeline, and moved key pixels server-side. I also built the first meta pricing feeds and onboarded 23 partners and vendors, including Virgin Voyages, Viking and Hurtigruten.</p>
+      </article>
+    </section>
+
+    <section class="how" aria-labelledby="how-heading">
+      <h2 id="how-heading">How I work</h2>
+      <p>I do my best work owning a hard problem from the first query to the last alert: a revenue-critical page, a migration nobody wants to touch, a pipeline that has to be right every night. I like working closely with a strong lead, co-leading projects and helping teammates along the way.</p>
+      <p>I care about leaving systems easier to change than I found them, which is why so much of my work has been upgrades: PHP 8 across 12 repositories, Next.js from the Pages Router to the App Router, Jenkins to GitHub Actions, hand-managed AWS to audited Terraform.</p>
+    </section>
+
+    <section class="tools" aria-labelledby="tools-heading">
+      <h2 id="tools-heading">Tools I use most</h2>
+      <dl>
+        <div><dt>Languages</dt><dd>TypeScript, JavaScript, PHP, Python, SQL, Terraform</dd></div>
+        <div><dt>Frontend</dt><dd>React, Next.js App Router and Server Components, Tailwind CSS</dd></div>
+        <div><dt>Backend and data</dt><dd>Node.js, GraphQL, Convex, Inngest, MySQL, PostgreSQL, Elasticsearch, Redis</dd></div>
+        <div><dt>Cloud and delivery</dt><dd>AWS, Vercel, Docker, GitHub Actions, Datadog</dd></div>
+        <div><dt>Analytics</dt><dd>Google Tag Manager, Segment, Braze, Adobe Analytics, A/B testing with Vercel Flags</dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="contact wrap">
+    <h2>Get in touch</h2>
+    <p>The fastest way to reach me is email: <a href="mailto:willweaver@gmail.com">willweaver@gmail.com</a>. I’m also on <a href="https://www.linkedin.com/in/william-w-a8011926">LinkedIn</a>.</p>
+  </footer>
+</body>
+</html>
