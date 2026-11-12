@@ -315,6 +315,10 @@ main { border-top: 1px solid var(--rule); }
   font-size: 0.95rem;
   font-variant-numeric: tabular-nums;
 }
+.when .org {
+  display: block;
+  font-weight: 600;
+}
 .project p:not(.when) {
   grid-area: body;
   margin: 0.6rem 0 0;
@@ -405,6 +409,8 @@ main { border-top: 1px solid var(--rule); }
       "body";
   }
   .when { margin-top: 0.25rem; }
+  .when .org { display: inline; }
+  .when .org::before { content: " · "; font-weight: 400; }
   .tools dd { margin-top: 0.15rem; }
 }
 
