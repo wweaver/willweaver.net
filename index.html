@@ -69,10 +69,17 @@
       </article>
 
       <article class="project">
-        <h3>Rebuilding Find a Cruise</h3>
-        <p class="when">2025<span class="org">Tripadvisor</span></p>
+        <h3>Find a Cruise and the App Router</h3>
+        <p class="when">2025–2026<span class="org">Tripadvisor</span></p>
         <ul class="layers" aria-label="What I built"><li>API</li><li>UI</li></ul>
-        <p>The cruise search page on Cruise Critic, Tripadvisor’s cruise site, and its <strong>largest source of revenue</strong>. I led its rewrite on React Server Components with structured data and revenue tracking from day one, planned and ran the 2025 rollout to all traffic, then owned the wider App Router migration. Years earlier I’d built the Elasticsearch search API behind it.</p>
+        <p>Find a Cruise is the cruise search page on Cruise Critic, Tripadvisor’s cruise site, and its <strong>largest source of revenue</strong>. I led its rewrite on React Server Components and its 2025 rollout to all traffic, then led the rest of the site’s App Router migration: moving the remaining pages and <strong>34 API endpoints</strong>, including the Auth0 login flow, and taking the site off Chakra UI onto Tailwind.</p>
+      </article>
+
+      <article class="project">
+        <h3>Edge middleware, flags and A/B tests</h3>
+        <p class="when">2022–2026<span class="org">Tripadvisor</span></p>
+        <ul class="layers" aria-label="What I built"><li>Edge</li><li>UI</li></ul>
+        <p>I worked in the site’s Next.js middleware for four years: market and locale detection by country, redirects, and bot blocking driven by Vercel Edge Config. On the Vercel Flags SDK I built experiments assigned at the edge, including a <strong>3-way homepage search test</strong> and a <strong>4-way redesign test</strong>, plus flag-gated launches for Price Alerts and cookie consent.</p>
       </article>
 
       <article class="project">
@@ -154,7 +161,7 @@
     <section id="how-i-work" class="how" aria-labelledby="how-heading">
       <h2 id="how-heading">How I work</h2>
       <p>I do my best work owning a hard problem from the first query to the last alert: a revenue-critical page, a migration nobody wants to touch, a pipeline that has to be right every night. I like working closely with a strong lead, co-leading projects and helping teammates along the way.</p>
-      <p>I care about leaving systems easier to change than I found them, which is why so much of my work has been upgrades: PHP 7 to 8.5 on the main platform, Next.js from the Pages Router to the App Router, Jenkins to GitHub Actions, hand-managed AWS to audited Terraform.</p>
+      <p>I care about leaving systems easier to change than I found them, which is why so much of my work has been upgrades: PHP 7 to 8.5 on the main platform, Next.js from 9.5 to 16 and from the Pages Router to the App Router, Jenkins to GitHub Actions, hand-managed AWS to audited Terraform.</p>
       <p>I’ve worked with AI coding agents every day since 2025: Claude Code, Codex and Copilot, often several in parallel with Conductor, with CodeRabbit reviewing pull requests. At Tripadvisor I co-wrote the agent instructions and the guardrails that keep agents from deploying, publishing or migrating production.</p>
     </section>
 
@@ -164,7 +171,7 @@
         <div><dt>Languages</dt><dd>TypeScript, JavaScript, PHP, Python, SQL, Terraform</dd></div>
         <div><dt>Frontend</dt><dd>React, Next.js App Router and Server Components, React Router, Shopify Hydrogen, Tailwind CSS</dd></div>
         <div><dt>Backend and data</dt><dd>Node.js, NestJS, GraphQL, Auth0, Prisma, Convex, Inngest, MySQL, PostgreSQL, Elasticsearch and OpenSearch, Redis</dd></div>
-        <div><dt>Cloud and delivery</dt><dd>AWS (Lambda, API Gateway, S3, SES, SNS, Cognito, ECS), Serverless Framework and SST, Terraform, Vercel, Docker, GitHub Actions, Datadog</dd></div>
+        <div><dt>Cloud and delivery</dt><dd>AWS (Lambda, API Gateway, S3, SES, SNS, Cognito, ECS), Serverless Framework and SST, Terraform, Vercel (Flags SDK, Edge Config), Turborepo, Docker, GitHub Actions, Datadog</dd></div>
         <div><dt>Testing</dt><dd>Playwright, Vitest, Jest, Checkly, PHPUnit</dd></div>
         <div><dt>Analytics</dt><dd>Google Tag Manager, Segment, Braze, Adobe Analytics, A/B testing with Vercel Flags</dd></div>
         <div><dt>AI-assisted</dt><dd>Claude Code, OpenAI Codex, GitHub Copilot, CodeRabbit, Conductor, agent instructions and skills, production guardrails for agents</dd></div>
